@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpensesTracker</title>
+    <link rel="icon" href="Z:\UT011307\Expensize Tracker\cost.png">
+    <link rel="stylesheet" href="expenses_tracker.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cardBalance">
+            <div>
+                <h2 id="balance">Rs.</h2>
+                <p>Balance</p>
+                <div class="summary">
+                    <span class="income">Income:Rs.<span id="income">0</span>
+                        <span class="expense">Expense:Rs.<span id="expense">0</span>
+                </div>
+            </div>
+            <div class="card">
+                <select id="type">
+                    <option value="0">
+                        Income
+                    </option>
+                    <option value="1">
+                        Expense
+                    </option>
+                </select>
+                <input type="text" id="name" placeholder="Enter Name">
+                <input type="text" id="number" placeholder="0">
+                <button onclick="additem">
+                    Add
+                </button>
+            </div>
+            <div class="card" id="list">
+
+            </div>
+            <script src="expenses.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

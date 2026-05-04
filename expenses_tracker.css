@@ -1,0 +1,66 @@
+:root{
+    --primary:#4f46e5;
+    --income:#16a34a;
+    __bg:#f1f5f9;
+    --card:#ffffff;
+    --expense:#a31616;
+
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:var(--bg);
+    margin:0;
+}
+.container{
+    max-width:400px;
+    margin:auto;
+    padding: 20px;
+}
+.card{
+    background:var(--card);
+    border-radius:15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow:0 8px 15px rgba(0,0,0,0.05);
+}
+.balance{
+    text-align:center;
+}
+.summary{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+.income{
+    color:(var(--income));
+   
+}
+.expense{
+    color:(var(--expense))
+}
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+.item{
+    display:flex;
+ 
+    margin-top:10px;
+    border-radius:10px;
+   
+
+}
