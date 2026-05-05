@@ -53,7 +53,7 @@
         div.innerHTML = `
           <span>${item.name}</span>
           <span>${item.amount}</span>
-          <span class="delete" onclick="deleteItem(${i})">&#10060;</span>
+          <span class="delete" onclick="deleteItem(${i})">DEL</span>
         `;
 
         list.appendChild(div);

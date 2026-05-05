@@ -1,15 +1,20 @@
 :root{
     --primary:#4f46e5;
-    --income:#16a34a;
+
     __bg:#f1f5f9;
     --card:#ffffff;
-    --expense:#a31616;
+   
 
 }
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background:var(--bg);
     margin:0;
+    background:linear-gradient(90deg,lightblue,lightpink,lightblue);
+  
+}
+img{
+    height:25px;
 }
 .container{
     max-width:400px;
@@ -21,22 +26,46 @@ body{
     border-radius:15px;
     padding: 15px;
     margin-bottom: 15px;
-    box-shadow:0 8px 15px rgba(0,0,0,0.05);
+    box-shadow:0 8px 15px rgba(49, 162, 182, 0.664);
 }
-.balance{
-    text-align:center;
+#balance{
+    
+    color:rgb(241, 228, 43);
+    
 }
 .summary{
     display:flex;
     justify-content:space-between;
     margin-top:10px;
 }
-.income{
-    color:(var(--income));
-   
+#income{
+    color:green;
+    margin:auto;
 }
-.expense{
-    color:(var(--expense))
+#expense{
+    color:red;
+    margin:auto;
+}
+.des{
+    width:90%;
+}
+.amo{
+    width:90%;
+}
+#type{
+    width:96%;
+}
+.adding{
+    width:96%;
+}
+.delete{
+    margin-left:auto;
+    cursor: pointer;
+    color: red;
+}
+.adding:hover{
+    color:rgb(216, 69, 69);
+    border:1px solid black;
 }
 input,select{
     width:100%;

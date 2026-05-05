@@ -13,35 +13,37 @@
     <div class="container">
         <div class="cardBalance">
             <div>
+                <h1 style="color:rgb(241, 228, 43);">&#10024;Balance</h1>
                 <h2 id="balance">Rs.</h2>
-                <p>Balance</p>
+                
                 <div class="summary">
-                    <span class="income">Income:Rs.<span id="income">0</span>
-                        <span class="expense">Expense:Rs.<span id="expense">0</span>
+                    <span class="income"><img src="icons8-picking-money-50.png"> Rs.<span id="income">0</span><br>
+                    <br>
+                        <span class="expense"><img src="icons8-loss-50.png"> Rs.<span id="expense">0</span>
                 </div>
-            </div>
+            </div><br>
             <div class="card">
                 <select id="type">
                     <option value="0">
-                        Income
+                    Expense
                     </option>
                     <option value="1">
-                        Expense
+                     Income
                     </option>
                 </select>
-                <input type="text" id="name" placeholder="Enter Name">
-                <input type="text" id="number" placeholder="0">
-                <button onclick="additem">
+                <input type="text" class="des" id="name" placeholder="Description" required>
+                <input type="text"class="amo"id="amount" placeholder="0" required>
+                <button onclick="additem()" class="adding">
                     Add
                 </button>
             </div>
             <div class="card" id="list">
 
             </div>
-            <script src="expenses.js"></script>
+           
         </div>
     </div>
-
+    <script src="expenses.js"></script>
 </body>
 
 </html>
